@@ -128,7 +128,7 @@ export default function PublicStorePage() {
 
 function StorefrontProductCard({ product, store }) {
     const brand = store.brandColor || '#10b981'
-    const currency = process.env.NEXT_PUBLIC_CURRENCY_SYMBOL || '$'
+    const currency = process.env.NEXT_PUBLIC_CURRENCY_SYMBOL || '₹'
     const rating = product.rating?.length
         ? product.rating.reduce((a, b) => a + (b.rating || 0), 0) / product.rating.length
         : 0

@@ -9,7 +9,7 @@ import toast from 'react-hot-toast'
 
 export default function OrderSummary({ store }) {
     const dispatch = useDispatch()
-    const currency = process.env.NEXT_PUBLIC_CURRENCY_SYMBOL || '$'
+    const currency = process.env.NEXT_PUBLIC_CURRENCY_SYMBOL || '₹'
 
     const items = useSelector(s => s.cart.cartByStore?.[store.id]?.items) || []
     const total = items.reduce((acc, it) => acc + it.price * it.qty, 0)

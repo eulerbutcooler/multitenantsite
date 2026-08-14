@@ -18,7 +18,7 @@ export default function PublicStoreProductPage() {
     const router = useRouter()
     const dispatch = useDispatch()
     const { user } = useUser()
-    const currency = process.env.NEXT_PUBLIC_CURRENCY_SYMBOL || '$'
+    const currency = process.env.NEXT_PUBLIC_CURRENCY_SYMBOL || '₹'
 
     const [store, setStore] = useState(null)
     const [product, setProduct] = useState(null)
